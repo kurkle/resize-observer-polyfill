@@ -1,7 +1,7 @@
 {
-    "name": "resize-observer-polyfill",
+    "name": "@kurkle/resize-observer-polyfill",
     "author": "Denis Rul <que.etc@gmail.com>",
-    "version": "1.5.1",
+    "version": "0.1.0",
     "description": "A polyfill for the Resize Observer API",
     "main": "dist/ResizeObserver.js",
     "module": "dist/ResizeObserver.es.js",
@@ -19,11 +19,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/que-etc/resize-observer-polyfill.git"
+        "url": "https://github.com/kurkle/resize-observer-polyfill.git"
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/que-etc/resize-observer-polyfill/issues"
+        "url": "https://github.com/kurkle/resize-observer-polyfill/issues"
     },
     "types": "src/index.d.ts",
     "files": [
@@ -40,7 +40,7 @@
         "polyfill",
         "ponyfill"
     ],
-    "homepage": "https://github.com/que-etc/resize-observer-polyfill",
+    "homepage": "https://github.com/kurkle/resize-observer-polyfill",
     "devDependencies": {
         "babel-eslint": "10.0.1",
         "cpy-cli": "2.0.0",

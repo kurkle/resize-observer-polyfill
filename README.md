@@ -3,7 +3,6 @@ ResizeObserver Polyfill
 
 [![Build Status][travis-image]][travis-url]
 
-
 A polyfill for the Resize Observer API.
 
 Implementation is based on the MutationObserver and uses Mutation Events as a fall back if the first one is not supported, so there will be no polling unless DOM changes. Doesn't modify observed elements. Handles CSS transitions/animations and can possibly observe changes caused by dynamic CSS pseudo-classes, e.g. by `:hover`.
@@ -26,14 +25,9 @@ npm install resize-observer-polyfill --save-dev
 bower install resize-observer-polyfill --save-dev
 ```
 
-
 ## Browser Support
 
-Polyfill has been tested in the following browsers:
-
-[![Build Status](https://saucelabs.com/browser-matrix/que-etc.svg)](https://saucelabs.com/beta/builds/303f5344a7214ba5b62bc7079a15d376)
-
-**NOTE:** Internet Explorer 8 and its earlier versions are not supported.
+IE11
 
 ## Usage Example
 

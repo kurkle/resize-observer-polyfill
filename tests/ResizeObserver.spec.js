@@ -374,11 +374,11 @@ describe('ResizeObserver', () => {
 
                 expect(entries[0].target).toBe(docElement);
 
-                expect(entries[0].contentRect.width).toBe(width);
-                expect(entries[0].contentRect.height).toBe(height);
+                expect(entries[0].contentRect.width).toBeCloseTo(width, 1);
+                expect(entries[0].contentRect.height).toBeCloseTo(height, 1);
                 expect(entries[0].contentRect.top).toBe(0);
-                expect(entries[0].contentRect.right).toBe(width);
-                expect(entries[0].contentRect.bottom).toBe(height);
+                expect(entries[0].contentRect.right).toBeCloseTo(width, 1);
+                expect(entries[0].contentRect.bottom).toBeCloseTo(height, 1);
                 expect(entries[0].contentRect.left).toBe(0);
             }).then(async () => {
                 document.body.removeChild(elements.root);
@@ -703,8 +703,8 @@ describe('ResizeObserver', () => {
                 expect(entries.length).toBe(1);
                 expect(entries[0].target).toBe(elements.root);
 
-                expect(entries[0].contentRect.width).toBe(elements.root.clientWidth);
-                expect(entries[0].contentRect.height).toBe(elements.root.clientHeight);
+                expect(Math.round(entries[0].contentRect.width)).toBe(elements.root.clientWidth);
+                expect(Math.ceil(entries[0].contentRect.height)).toBe(elements.root.clientHeight);
 
                 // It is not possible to run further tests if browser has overlaid scroll bars.
                 if (

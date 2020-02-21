@@ -24,35 +24,11 @@ const launchers = {
             browserName: 'firefox',
             version: 'latest-1'
         },
-        SL_EDGE_17: {
-            base: 'SauceLabs',
-            platform: 'Windows 10',
-            browserName: 'MicrosoftEdge',
-            version: '17.17134'
-        },
-        SL_EDGE_16: {
-            base: 'SauceLabs',
-            platform: 'Windows 10',
-            browserName: 'MicrosoftEdge',
-            version: '16.16299'
-        },
         SL_IE_11: {
             base: 'SauceLabs',
             browserName: 'internet explorer',
             platform: 'Windows 8.1',
             version: '11.0'
-        },
-        SL_IE_10: {
-            base: 'SauceLabs',
-            browserName: 'internet explorer',
-            platform: 'Windows 7',
-            version: '10.0'
-        },
-        SL_IE_9: {
-            base: 'SauceLabs',
-            browserName: 'internet explorer',
-            platform: 'Windows 7',
-            version: '9.0'
         }
     },
     linux: {
@@ -96,12 +72,6 @@ const launchers = {
             platform: 'macOS 10.13',
             browserName: 'safari',
             version: '12.0'
-        },
-        SL_SAFARI_11: {
-            base: 'SauceLabs',
-            platform: 'macOS 10.13',
-            browserName: 'safari',
-            version: '11.1'
         }
     },
     ios: {
@@ -111,13 +81,6 @@ const launchers = {
             deviceName: 'iPhone Simulator',
             platform: 'iOS',
             version: '12.0'
-        },
-        SL_IOS_11: {
-            base: 'SauceLabs',
-            browserName: 'safari',
-            deviceName: 'iPhone Simulator',
-            platform: 'iOS',
-            version: '11.3'
         }
     }
 };
